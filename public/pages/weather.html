@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="cursity" ng-model="bool" ng-show="bool">
+		<div class="maintext">
+			<h1>Are you in {{currentCityName}}?</h1>
+			<h4>{{currentDayWeatherDay}}</h4>
+			<h3>{{currentDayWeatherDesc}}</h3>
+			<h1> <img src="{{currentDayWeatherIcon}}"> {{currentDayWeatherInF}} </h1>
+			<br/>				
+		</div>
+		<br/>
+	<div class="oterweath">	
+		<div class="row">
+			<div ng-repeat="data in allData" class="col-md-3">
+					<div class="lft">
+						<div class="cvx">
+							<div>{{data.dayer}}</div>
+						</div>
+						<img src="{{data.imager}}"> {{data.temper}}
+					</div>
+			</div>
+		</div>	
+	</div>		
+		<img class="curcityimage"src="./img/currcity.png" />
+	</div>
+
+	<cities></cities>
+</div>
+
+

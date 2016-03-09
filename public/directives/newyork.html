@@ -1,0 +1,13 @@
+<div class="maincurrentcity">
+    <div class="oterweathothers"> 
+        <div class="row">
+            City: {{currentCityNames}}
+            <div ng-repeat="data in finalDataOtherCities">
+             {{data.otherslayer}}<br/>
+             {{data.othercurrentDayWeatherDesc}}<br/>
+             <img src="{{data.othersimager}}"> {{data.otherstemper}}
+            </div>
+        </div>  
+    </div>
+    <img class="smallimages" src="img/newyork.png">
+</div>
